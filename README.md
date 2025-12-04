@@ -25,7 +25,7 @@ Project Structure
   - `week{2}_team{16}.mov`, `week{2}_team{16}.pdf` — week 2 materials
   - `week{1}_team{16}.mp4`, `week{1}_team{16}.pdf` — week 1 materials
   - `Screen Recording 2025-12-01 at 12.53.32.mov` — screen recording
-  - (No `requirements.txt` or environment files at present)
+ 
 
 Data Paths and Inputs
 - The notebook references local datasets via hard-coded absolute paths, for example:
@@ -33,7 +33,7 @@ Data Paths and Inputs
     /Users/mohammedakramlrhorfi/Library/Mobile Documents/com~apple~CloudDocs/hackathon_data`
   - Google Drive shortcuts for Sentinel data under `.../data_genhack/...`
 - These paths are user-specific and will need to be adapted for new environments.
-- Recommended approach (TODO): refactor the notebook to read base paths from environment variables or a config cell, e.g. `BASE_DIR`, `SENTINEL2_NDVI_PATH`, `SENTINEL3_NDVI_DIR`, `ERA5_LAND_DIR`, `GADM_EUROPE_PATH`.
+
 
 Requirements
 - Python 3.9–3.11 recommended (exact version not specified; pick one compatible with GeoPandas/Rasterio and PyTorch for your platform).
@@ -109,9 +109,3 @@ Reproducibility Notes
 - Some computations may be resource-intensive (geospatial raster operations, ML training).
 - Current local date/time for this README generation: 2025-12-04 12:19 (local).
 
-License
-- No license file is present.
-
-Maintainers
-- Team: LATENT-SPACE [16]
-- If you are not part of the original project team, please adapt data paths and environment setup accordingly.
